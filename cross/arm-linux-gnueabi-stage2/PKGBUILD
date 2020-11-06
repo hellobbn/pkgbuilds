@@ -96,7 +96,7 @@ build() {
       --host=${CHOST} \
       --build=${CHOST} \
       --with-arch=armv6 \
-      --with-float=hard \
+      --with-float=soft \
       --with-fpu=vfp
 
   make -j12 all-gcc all-target-libgcc
