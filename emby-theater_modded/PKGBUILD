@@ -1,0 +1,17 @@
+# Maintainer: David Mehren <david.mehren@udo.edu>
+
+pkgname=emby-theater-modded
+pkgver=3.0.20
+pkgrel=2
+pkgdesc="Emby Theater"
+arch=('x86_64')
+url="https://element.io"
+license=('Apache')
+source=("emby-modded.deb")
+sha256sums=('a95327a3d0d3ac65a968e5e1647fce7523bc5b4a1b4c53a265a30c48a0756ee1')
+replaces=('emby-theater')
+
+package() {
+  bsdtar -xf data.tar.xz -C "$pkgdir/"
+}
+
